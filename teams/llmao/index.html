@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LLmao — Your next friend group starts with one hang</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Reset & Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            color: #0F172A;
+            background: #FFFFFF;
+            line-height: 1.55;
+        }
+
+        /* Typography Scale */
+        h1 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 16px;
+            color: #0F172A;
+        }
+
+        h2 {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: 1.25;
+            margin-bottom: 24px;
+            color: #0F172A;
+        }
+
+        h3 {
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            color: #0F172A;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.55;
+            margin-bottom: 16px;
+            color: #475569;
+        }
+
+        small {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.45;
+            color: #94A3B8;
+        }
+
+        /* Layout */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 32px;
+        }
+
+        section {
+            padding: 64px 0;
+        }
+
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 0;
+            }
+            .container {
+                padding: 0 20px;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            background: #FFFFFF;
+            border-bottom: 1px solid #E5E7EB;
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 32px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #2563EB;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #475569;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 200ms ease-out;
+        }
+
+        .nav-links a:hover {
+            color: #2563EB;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: 500;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 200ms ease-out;
+            text-align: center;
+        }
+
+        .btn-primary {
+            background: #2563EB;
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover {
+            background: #1E40AF;
+        }
+
+        .btn-primary:disabled {
+            background: #CBD5E1;
+            color: #FFFFFF;
+            cursor: not-allowed;
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #2563EB;
+            border: 1px solid #CBD5E1;
+        }
+
+        .btn-secondary:hover {
+            border-color: #2563EB;
+            background: #F8FAFC;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 80px 0;
+            background: #FFFFFF;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-headline {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #0F172A;
+        }
+
+        .hero-subheading {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 1.55;
+            color: #475569;
+            margin-bottom: 32px;
+        }
+
+        .hero-micro {
+            font-size: 16px;
+            font-weight: 600;
+            color: #6366F1;
+            margin-top: 24px;
+            display: block;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 16px;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 60px 0;
+            }
+            .hero-headline {
+                font-size: 36px;
+            }
+            .btn-group {
+                flex-direction: column;
+            }
+            .btn {
+                width: 100%;
+            }
+        }
+
+        /* Problem Section */
+        .problem {
+            background: #F8FAFC;
+            padding: 64px 0;
+        }
+
+        .problem h2 {
+            max-width: 600px;
+            margin-bottom: 32px;
+        }
+
+        .problem-text {
+            max-width: 700px;
+            margin-bottom: 24px;
+        }
+
+        .problem-text p {
+            margin-bottom: 16px;
+        }
+
+        .problem-highlight {
+            font-size: 18px;
+            font-weight: 600;
+            color: #0F172A;
+            margin-top: 32px;
+        }
+
+        /* How It Works Section */
+        .how-it-works {
+            padding: 64px 0;
+        }
+
+        .howitworks-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 40px;
+            margin-top: 48px;
+        }
+
+        .howitworks-card {
+            background: #F8FAFC;
+            padding: 40px 32px;
+            border-radius: 12px;
+            border: 1px solid #E5E7EB;
+        }
+
+        .howitworks-card h3 {
+            color: #2563EB;
+            margin-bottom: 16px;
+        }
+
+        .howitworks-card p {
+            margin-bottom: 0;
+        }
+
+        .keypoint {
+            background: #FFFFFF;
+            border: 1px solid #E5E7EB;
+            padding: 24px 32px;
+            border-radius: 12px;
+            margin: 40px 0;
+            font-size: 18px;
+            font-weight: 600;
+            color: #0F172A;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .howitworks-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+        }
+
+        /* Examples Table */
+        .examples-section {
+            padding: 64px 0;
+            background: #FFFFFF;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 32px;
+            background: #FFFFFF;
+        }
+
+        th, td {
+            border: 1px solid #E5E7EB;
+            padding: 16px;
+            text-align: left;
+        }
+
+        th {
+            background: #F8FAFC;
+            font-weight: 600;
+            color: #0F172A;
+        }
+
+        tr:nth-child(even) {
+            background: #F8FAFC;
+        }
+
+        td {
+            color: #475569;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            background: #F8FAFC;
+            padding: 64px 0;
+        }
+
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+            margin-top: 48px;
+        }
+
+        .testimonial-card {
+            background: #FFFFFF;
+            padding: 32px;
+            border-radius: 12px;
+            border: 1px solid #E5E7EB;
+            box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+        }
+
+        .testimonial-text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.55;
+            color: #0F172A;
+            font-style: italic;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-attribution {
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+        }
+
+        @media (max-width: 768px) {
+            .testimonial-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Pricing */
+        .pricing {
+            padding: 64px 0;
+            background: #FFFFFF;
+        }
+
+        .pricing-content {
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .pricing h2 {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .pricing-card {
+            background: #F8FAFC;
+            padding: 48px 32px;
+            border-radius: 12px;
+            border: 1px solid #E5E7EB;
+            margin-bottom: 32px;
+        }
+
+        .pricing-highlight {
+            font-size: 24px;
+            font-weight: 600;
+            color: #0F172A;
+            margin-bottom: 16px;
+        }
+
+        .pricing-detail {
+            font-size: 16px;
+            color: #475569;
+            margin-bottom: 24px;
+        }
+
+        .pricing-options {
+            display: flex;
+            gap: 24px;
+            justify-content: center;
+            margin-top: 32px;
+            flex-wrap: wrap;
+        }
+
+        .pricing-option {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .pricing-option-label {
+            font-size: 14px;
+            color: #94A3B8;
+            margin-bottom: 8px;
+        }
+
+        .pricing-option-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: #0F172A;
+        }
+
+        /* FAQ */
+        .faq {
+            background: #F8FAFC;
+            padding: 64px 0;
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: #FFFFFF;
+            padding: 24px 32px;
+            margin-bottom: 16px;
+            border-radius: 12px;
+            border: 1px solid #E5E7EB;
+        }
+
+        .faq-question {
+            font-size: 16px;
+            font-weight: 600;
+            color: #0F172A;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            font-size: 16px;
+            color: #475569;
+            line-height: 1.55;
+            display: none;
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        .faq-icon {
+            color: #6366F1;
+            font-size: 20px;
+            font-weight: bold;
+            transition: transform 200ms ease-out;
+        }
+
+        .faq-item.open .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* CTA Section */
+        .cta-final {
+            padding: 64px 0;
+            background: #FFFFFF;
+            text-align: center;
+        }
+
+        .cta-final-text {
+            font-size: 24px;
+            font-weight: 600;
+            color: #0F172A;
+            margin-bottom: 32px;
+        }
+
+        /* Footer */
+        footer {
+            background: #0F172A;
+            color: #94A3B8;
+            padding: 40px 0;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #6366F1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Accessibility */
+        a:focus, button:focus {
+            outline: 2px solid #2563EB;
+            outline-offset: 2px;
+        }
+
+        /* Utilities */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-32 {
+            margin-top: 32px;
+        }
+
+        .mb-32 {
+            margin-bottom: 32px;
+        }
+
+        .max-w-600 {
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">LLmao</div>
+            <ul class="nav-links">
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-headline">Your next friend group starts with one hang.</h1>
+                <p class="hero-subheading">Small groups. Shared activities. A host who makes sure nobody stands alone. This is how you rebuild your social life — one hang at a time.</p>
+                <span class="hero-micro">Everyone comes alone. That's the whole point.</span>
+                <div class="btn-group">
+                    <button class="btn btn-primary">Try your first hang free</button>
+                    <button class="btn btn-secondary">See what a hang looks like</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem">
+        <div class="container">
+            <h2>You've tried. It hasn't worked.</h2>
+            <div class="problem-text">
+                <p>You've gone to meetups where nobody talked to you. Downloaded apps that led nowhere. Said yes to events and left early because nobody made space for you.</p>
+                <p>The problem isn't effort. It's format. Big groups, no structure, no follow-up, no reason to talk to anyone specific.</p>
+            </div>
+            <div class="problem-highlight">LLmao fixes the format.</div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2>How it works</h2>
+            <p class="max-w-600"><strong>Small groups (6-8 people)</strong> matched by interest, age, and vibe. A shared activity that does the social heavy lifting. A trained host who keeps things flowing.</p>
+            
+            <div class="howitworks-grid">
+                <div class="howitworks-card">
+                    <h3>Before</h3>
+                    <p>You see everything: the activity, the vibe, the group size, who's hosting. You decide if it's for you. No blind commitment.</p>
+                </div>
+                <div class="howitworks-card">
+                    <h3>During</h3>
+                    <p>The activity carries the first 15 minutes. The host makes sure nobody's standing alone. The small group means you actually get to know people.</p>
+                </div>
+                <div class="howitworks-card">
+                    <h3>After</h3>
+                    <p>Group chat opens. Follow-up hangs happen if the group clicks. Your future matches improve based on feedback.</p>
+                </div>
+            </div>
+
+            <div class="keypoint">
+                This isn't an event you attend. It's a group you join.
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples Section -->
+    <section class="examples-section">
+        <div class="container">
+            <h2>What a hang looks like</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activity</th>
+                        <th>Size</th>
+                        <th>Vibe</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Coffee + conversation prompts</td>
+                        <td>6</td>
+                        <td>Chill</td>
+                    </tr>
+                    <tr>
+                        <td>Pickup basketball + food after</td>
+                        <td>8</td>
+                        <td>Energetic</td>
+                    </tr>
+                    <tr>
+                        <td>Museum walk + talk-as-you-go</td>
+                        <td>6</td>
+                        <td>Social</td>
+                    </tr>
+                    <tr>
+                        <td>Cooking together + shared meal</td>
+                        <td>6</td>
+                        <td>Chill</td>
+                    </tr>
+                    <tr>
+                        <td>Open mic night + debrief</td>
+                        <td>8</td>
+                        <td>Social</td>
+                    </tr>
+                    <tr>
+                        <td>Hiking + trailside conversation</td>
+                        <td>8</td>
+                        <td>Energetic</td>
+                    </tr>
+                    <tr>
+                        <td>Board games + mixing</td>
+                        <td>6</td>
+                        <td>Chill</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>After one hang</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I showed up alone and left with three people's numbers."</p>
+                    <p class="testimonial-attribution">— Sarah, 26</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Knowing it was only 6 people made me actually go."</p>
+                    <p class="testimonial-attribution">— Marcus, 28</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The group chat after was the best part. We're hanging out again this weekend."</p>
+                    <p class="testimonial-attribution">— Priya, 24</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The host noticed I was quiet and brought me in naturally. That never happens at meetups."</p>
+                    <p class="testimonial-attribution">— James, 27</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I've tried everything. This is the first thing that actually led to friends."</p>
+                    <p class="testimonial-attribution">— Aisha, 25</p>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"I was scared I'd be the most awkward person there. Turns out everyone felt that way."</p>
+                    <p class="testimonial-attribution">— Devon, 23</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <h2>Pricing</h2>
+            <div class="pricing-content">
+                <div class="pricing-card">
+                    <div class="pricing-highlight">Your first hang is free.</div>
+                    <p class="pricing-detail">No card required.</p>
+                </div>
+                <div class="pricing-options">
+                    <div class="pricing-option">
+                        <div class="pricing-option-label">Per Hang</div>
+                        <div class="pricing-option-value">$10</div>
+                    </div>
+                    <div class="pricing-option">
+                        <div class="pricing-option-label">Monthly Unlimited</div>
+                        <div class="pricing-option-value">$25</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" id="faq">
+        <div class="container faq-container">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item open">
+                <div class="faq-question">
+                    <span>How is this different from Meetup?</span>
+                    <span class="faq-icon">−</span>
+                </div>
+                <div class="faq-answer">Small matched groups, trained hosts, structured activities, follow-up system. Meetup is an open event. LLmao is an intentional group.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Will it be awkward?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">Everyone comes alone. Activity + small group + host = no standing around in silence.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>What happens after?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">Group chat. Follow-up hangs. Better matches over time.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Is it safe?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">Trained hosts, norms, small groups, post-hang feedback system.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Can't afford $10?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">First hang free. $25/month unlimited. Sliding scale coming.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="cta-final">
+        <div class="container">
+            <p class="cta-final-text">Stop waiting for someone to invite you.</p>
+            <button class="btn btn-primary">Try your first hang free</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 LLmao. All rights reserved. | <a href="#">Privacy</a> | <a href="#">Terms</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // FAQ Toggle
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('open');
+            });
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Button click handlers (demo)
+        document.querySelectorAll('.btn-primary, .btn-secondary').forEach(btn => {
+            btn.addEventListener('click', function() {
+                console.log('CTA clicked');
+            });
+        });
+    </script>
+</body>
+</html>

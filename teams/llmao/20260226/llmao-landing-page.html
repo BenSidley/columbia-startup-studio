@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Rekindled — Your next friend group starts with one hang.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  /* ========================================
+     CSS Variables — from Rekindled Style Guide
+     ======================================== */
+  :root {
+    --primary: #2563EB;
+    --primary-dark: #1E40AF;
+    --soft-slate: #64748B;
+    --muted-indigo: #6366F1;
+    --bg-primary: #FFFFFF;
+    --bg-soft: #F8FAFC;
+    --border: #E5E7EB;
+    --text-primary: #0F172A;
+    --text-secondary: #475569;
+    --text-muted: #94A3B8;
+    --success: #16A34A;
+    --warning: #F59E0B;
+    --error: #DC2626;
+    --disabled: #CBD5E1;
+    --shadow-card: 0 1px 2px rgba(0,0,0,0.04);
+    --radius-btn: 8px;
+    --radius-card: 12px;
+    --max-width: 1100px;
+    --section-pad-desktop: 64px;
+    --section-pad-mobile: 40px;
+  }
+
+  /* ========================================
+     Reset & Base
+     ======================================== */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+  }
+
+  /* ========================================
+     Layout
+     ======================================== */
+  .container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+  }
+
+  section {
+    padding: var(--section-pad-desktop) 0;
+  }
+
+  /* ========================================
+     Typography
+     ======================================== */
+  h1 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-primary);
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--text-primary);
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--text-primary);
+  }
+
+  p {
+    color: var(--text-secondary);
+    line-height: 1.55;
+  }
+
+  .text-small {
+    font-size: 14px;
+    line-height: 1.45;
+  }
+
+  .text-caption {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--text-muted);
+  }
+
+  /* ========================================
+     Buttons
+     ======================================== */
+  .btn-primary {
+    display: inline-block;
+    background: var(--primary);
+    color: #FFFFFF;
+    border: none;
+    border-radius: var(--radius-btn);
+    padding: 14px 28px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 180ms ease-out;
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-dark);
+  }
+
+  .btn-secondary {
+    display: inline-block;
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--disabled);
+    border-radius: var(--radius-btn);
+    padding: 14px 28px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 180ms ease-out;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--primary);
+  }
+
+  /* ========================================
+     Navigation
+     ======================================== */
+  nav {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-decoration: none;
+    letter-spacing: -0.3px;
+  }
+
+  .nav-cta {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  /* ========================================
+     Hero
+     ======================================== */
+  .hero {
+    padding: 80px 0 64px;
+    text-align: center;
+  }
+
+  .hero h1 {
+    max-width: 680px;
+    margin: 0 auto 20px;
+  }
+
+  .hero-sub {
+    max-width: 560px;
+    margin: 0 auto 36px;
+    font-size: 18px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+
+  .hero-micro {
+    font-size: 14px;
+    color: var(--text-muted);
+    font-weight: 500;
+  }
+
+  /* ========================================
+     Problem Section
+     ======================================== */
+  .problem {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .problem-inner {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .problem h2 {
+    margin-bottom: 24px;
+  }
+
+  .problem p {
+    margin-bottom: 16px;
+  }
+
+  .problem .fix-line {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-top: 24px;
+  }
+
+  /* ========================================
+     How It Works
+     ======================================== */
+  .how-it-works h2 {
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .how-intro {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 48px;
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .step-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    padding: 28px 24px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .step-label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--primary);
+    margin-bottom: 12px;
+  }
+
+  .step-card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  .step-card p {
+    font-size: 15px;
+  }
+
+  .how-punchline {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  /* ========================================
+     Hang Examples
+     ======================================== */
+  .hangs {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .hangs h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .hang-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+  }
+
+  .hang-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    padding: 20px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .hang-activity {
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 10px;
+    font-size: 15px;
+  }
+
+  .hang-meta {
+    display: flex;
+    gap: 16px;
+    font-size: 13px;
+    color: var(--soft-slate);
+  }
+
+  .hang-meta span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* ========================================
+     Testimonials
+     ======================================== */
+  .testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+  }
+
+  .testimonial-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    padding: 24px;
+    box-shadow: var(--shadow-card);
+  }
+
+  .testimonial-text {
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.55;
+    margin-bottom: 14px;
+    font-style: italic;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--soft-slate);
+  }
+
+  /* ========================================
+     Pricing
+     ======================================== */
+  .pricing {
+    background: var(--bg-soft);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+  }
+
+  .pricing h2 {
+    margin-bottom: 32px;
+  }
+
+  .pricing-cards {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 680px;
+    margin: 0 auto 24px;
+  }
+
+  .pricing-card {
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-card);
+    padding: 32px 28px;
+    box-shadow: var(--shadow-card);
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+  }
+
+  .pricing-card.featured {
+    border-color: var(--primary);
+    border-width: 2px;
+  }
+
+  .pricing-label {
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--soft-slate);
+    margin-bottom: 8px;
+  }
+
+  .pricing-amount {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+  }
+
+  .pricing-detail {
+    font-size: 14px;
+    color: var(--text-muted);
+  }
+
+  .pricing-free {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin-top: 16px;
+  }
+
+  /* ========================================
+     FAQ
+     ======================================== */
+  .faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .faq-list {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+
+  .faq-item {
+    border-bottom: 1px solid var(--border);
+    padding: 20px 0;
+  }
+
+  .faq-item:first-child {
+    border-top: 1px solid var(--border);
+  }
+
+  .faq-question {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    font-family: inherit;
+    padding: 0;
+  }
+
+  .faq-question:hover {
+    color: var(--primary);
+  }
+
+  .faq-icon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    color: var(--text-muted);
+    transition: transform 180ms ease-out;
+  }
+
+  .faq-item.open .faq-icon {
+    transform: rotate(45deg);
+  }
+
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 180ms ease-out;
+  }
+
+  .faq-item.open .faq-answer {
+    max-height: 200px;
+  }
+
+  .faq-answer p {
+    padding-top: 12px;
+    font-size: 15px;
+    color: var(--text-secondary);
+  }
+
+  /* ========================================
+     Final CTA
+     ======================================== */
+  .final-cta {
+    text-align: center;
+    padding: 80px 0;
+  }
+
+  .final-cta h2 {
+    margin-bottom: 28px;
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ========================================
+     Footer
+     ======================================== */
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 32px 0;
+    text-align: center;
+  }
+
+  footer p {
+    font-size: 13px;
+    color: var(--text-muted);
+  }
+
+  /* ========================================
+     Responsive
+     ======================================== */
+  @media (max-width: 768px) {
+    section {
+      padding: var(--section-pad-mobile) 0;
+    }
+
+    h1 { font-size: 30px; }
+    h2 { font-size: 26px; }
+    h3 { font-size: 20px; }
+
+    .hero {
+      padding: 56px 0 48px;
+    }
+
+    .hero-sub {
+      font-size: 16px;
+    }
+
+    .steps {
+      grid-template-columns: 1fr;
+    }
+
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .pricing-card {
+      max-width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+  <div class="container nav-inner">
+    <a href="#" class="logo">Rekindled</a>
+    <a href="#pricing" class="btn-primary nav-cta">Try your first hang free</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Your next friend group starts with one hang.</h1>
+    <p class="hero-sub">Small groups. Shared activities. A host who makes sure nobody stands alone. This is how you rebuild your social life — one hang at a time.</p>
+    <div class="hero-ctas">
+      <a href="#pricing" class="btn-primary">Try your first hang free</a>
+      <a href="#hangs" class="btn-secondary">See what a hang looks like</a>
+    </div>
+    <p class="hero-micro">Everyone comes alone. That's the whole point.</p>
+  </div>
+</section>
+
+<!-- Problem -->
+<section class="problem">
+  <div class="container problem-inner">
+    <h2>You've tried. It hasn't worked.</h2>
+    <p>You've gone to meetups where nobody talked to you. Downloaded apps that led nowhere. Said yes to events and left early because nobody made space for you.</p>
+    <p>The problem isn't effort. It's format. Big groups, no structure, no follow-up, no reason to talk to anyone specific.</p>
+    <p class="fix-line">Rekindled fixes the format.</p>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="how-it-works">
+  <div class="container">
+    <h2>How it works</h2>
+    <p class="how-intro">6–8 people matched by interest, age, and vibe. A shared activity that does the social heavy lifting. A trained host who keeps things flowing.</p>
+    <div class="steps">
+      <div class="step-card">
+        <div class="step-label">Before</div>
+        <h3>Don't walk in blind.</h3>
+        <p>You see everything: the activity, the vibe, the group size, who's hosting. You decide if it's for you. No blind commitment.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-label">During</div>
+        <h3>The activity carries you.</h3>
+        <p>The activity carries the first 15 minutes. The host makes sure nobody's standing alone. The small group means you actually get to know people.</p>
+      </div>
+      <div class="step-card">
+        <div class="step-label">After</div>
+        <h3>One hang plants the seed.</h3>
+        <p>Group chat opens. Follow-up hangs happen if the group clicks. Your future matches improve based on feedback.</p>
+      </div>
+    </div>
+    <p class="how-punchline">This isn't an event you attend. It's a group you join.</p>
+  </div>
+</section>
+
+<!-- Hang Examples -->
+<section class="hangs" id="hangs">
+  <div class="container">
+    <h2>What a hang looks like</h2>
+    <div class="hang-grid">
+      <div class="hang-card">
+        <div class="hang-activity">Coffee + conversation prompts</div>
+        <div class="hang-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+            6 people
+          </span>
+          <span>Chill</span>
+        </div>
+      </div>
+      <div class="hang-card">
+        <div class="hang-activity">Pickup basketball + food after</div>
+        <div class="hang-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+            8 people
+          </span>
+          <span>Energetic</span>
+        </div>
+      </div>
+      <div class="hang-card">
+        <div class="hang-activity">Museum walk + talk-as-you-go</div>
+        <div class="hang-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+            6 people
+          </span>
+          <span>Social</span>
+        </div>
+      </div>
+      <div class="hang-card">
+        <div class="hang-activity">Cooking together + shared meal</div>
+        <div class="hang-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+            6 people
+          </span>
+          <span>Chill</span>
+        </div>
+      </div>
+      <div class="hang-card">
+        <div class="hang-activity">Open mic night + debrief</div>
+        <div class="hang-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+            8 people
+          </span>
+          <span>Social</span>
+        </div>
+      </div>
+      <div class="hang-card">
+        <div class="hang-activity">Hiking + trailside conversation</div>
+        <div class="hang-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+            8 people
+          </span>
+          <span>Energetic</span>
+        </div>
+      </div>
+      <div class="hang-card">
+        <div class="hang-activity">Board games + mixing</div>
+        <div class="hang-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="7" r="4"/><path d="M5.5 21a6.5 6.5 0 0 1 13 0"/></svg>
+            6 people
+          </span>
+          <span>Chill</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+  <div class="container">
+    <h2>After one hang</h2>
+    <div class="testimonial-grid">
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I showed up alone and left with three people's numbers."</p>
+        <p class="testimonial-author">— Sarah, 26</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"Knowing it was only 6 people made me actually go."</p>
+        <p class="testimonial-author">— Marcus, 28</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"The group chat after was the best part. We're hanging out again this weekend."</p>
+        <p class="testimonial-author">— Priya, 24</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"The host noticed I was quiet and brought me in naturally. That never happens at meetups."</p>
+        <p class="testimonial-author">— James, 27</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I've tried everything. This is the first thing that actually led to friends."</p>
+        <p class="testimonial-author">— Aisha, 25</p>
+      </div>
+      <div class="testimonial-card">
+        <p class="testimonial-text">"I was scared I'd be the most awkward person there. Turns out everyone felt that way."</p>
+        <p class="testimonial-author">— Devon, 23</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section class="pricing" id="pricing">
+  <div class="container">
+    <h2>Pricing</h2>
+    <div class="pricing-cards">
+      <div class="pricing-card">
+        <div class="pricing-label">First hang</div>
+        <div class="pricing-amount">Free</div>
+        <p class="pricing-detail">No card required</p>
+      </div>
+      <div class="pricing-card">
+        <div class="pricing-label">Per hang</div>
+        <div class="pricing-amount">$10</div>
+        <p class="pricing-detail">Pay as you go</p>
+      </div>
+      <div class="pricing-card featured">
+        <div class="pricing-label">Unlimited</div>
+        <div class="pricing-amount">$25<span style="font-size:18px;font-weight:500;color:var(--text-muted)">/mo</span></div>
+        <p class="pricing-detail">As many hangs as you want</p>
+      </div>
+    </div>
+    <p class="pricing-free">Sliding scale coming soon.</p>
+    <div style="margin-top:32px;">
+      <a href="#" class="btn-primary">Try your first hang free</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq">
+  <div class="container">
+    <h2>FAQ</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          How is this different from Meetup?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Small matched groups, trained hosts, structured activities, follow-up system. Meetup is an open event. Rekindled is an intentional group.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Will it be awkward?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Everyone comes alone. Activity + small group + host = no standing around in silence.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          What happens after?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Group chat. Follow-up hangs. Better matches over time.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Is it safe?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Trained hosts, norms, small groups, post-hang feedback system.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-question" onclick="this.parentElement.classList.toggle('open')">
+          Can't afford $10?
+          <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>First hang free. $25/month unlimited. Sliding scale coming.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Final CTA -->
+<section class="final-cta">
+  <div class="container">
+    <h2>Stop waiting for someone to invite you.</h2>
+    <a href="#" class="btn-primary">Try your first hang free</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p>&copy; 2026 Rekindled. Making showing up feel easier.</p>
+  </div>
+</footer>
+
+</body>
+</html>
