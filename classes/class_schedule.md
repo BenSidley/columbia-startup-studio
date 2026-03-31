@@ -104,19 +104,19 @@ The course follows the canonical validation sequence: **Problem → Solution →
 | **8**  | Tue | Mar 10        | c14w8  | Build sprint. Review experiment 2 results.               | Build     | 🎧 Cold Start + First 1000 Users + PR                     |
 | **8**  | Thu | Mar 12        | c15w8  | **MVP Presentations** + peer feedback                    | Build     | -                                                         |
 |        |     | **Mar 16-20** |        | **SPRING BREAK - NO CLASSES**                            |           |                                                           |
-| **9**  | Tue | Mar 24        | c16w9  | Post-break check-in. Plan experiment 3.                  | Iterate   | 🎧 RAG + MCP + When to Add AI                             |
-|        |     | ~~Mar 26~~    |        | ~~Academic Holiday - No Class~~                          |           |                                                           |
-| **10** | Tue | Mar 31        | c17w10 | Experiment 3 + social media / organic strategy           | Iterate   | 🎧 SEO + Content Marketing + AI Optimization              |
-| **10** | Thu | Apr 2         | c18w10 | Analyze experiment 3, iterate                            | Iterate   | 🎧 Lifecycle Marketing + Email                            |
-| **11** | Tue | Apr 7         | c19w11 | Analytics workshop: AARRR + GA/Amplitude setup           | Build     | 🎧 Metrics: AARRR + Leading vs Lagging                    |
-| **11** | Thu | Apr 9         | c20w11 | Experiment 4 + pricing experimentation                   | Build     | 🎧 Unit Economics + Pricing                               |
-| **12** | Tue | Apr 14        | c21w12 | Onboarding optimization workshop + user testing          | Build     | 🎧 Fundraising + Company Formation                        |
-| **12** | Thu | Apr 16        | c22w12 | Iterate on product based on testing results              | Build     | [Meta Blueprint Cert](https://www.facebook.com/business/learn/certification) |
-| **13** | Tue | Apr 21        | c23w13 | Y Combinator applications + final build                  | Build     | 🎧 YC Applications                                        |
-| **13** | Thu | Apr 23        | c24w13 | **Feature freeze.** Final measurement + pitch data collection. | Measure | -                                                         |
-| **14** | Tue | Apr 28        | c25w14 | Build pitch narrative + presentations                    | Ship      | *Duarte, Resonate* · *Sequoia Pitch Deck Outline*         |
-| **14** | Thu | Apr 30        | c26w14 | Pitch workshop + dress rehearsal                         | Ship      | -                                                         |
-| **Finals** | Tue | May 12   | c27    | **DEMO DAY**                                             | Ship      | -                                                         |
+| **9**  | Tue | Mar 24        | c16w9  | Post-break check-in. Peer review + semester planning.    | Iterate   |                                                           |
+| **9**  | Thu | Mar 26        | c17w9  | TBD                                                      | Iterate   |                                                           |
+| **10** | Tue | Mar 31        | c18w10 | TBD                                                      | Iterate   |                                                           |
+| **10** | Thu | Apr 2         | c19w10 | TBD                                                      | Iterate   |                                                           |
+| **11** | Tue | Apr 7         | c20w11 | TBD                                                      | Build     |                                                           |
+| **11** | Thu | Apr 9         | c21w11 | TBD                                                      | Build     |                                                           |
+| **12** | Tue | Apr 14        | c22w12 | TBD                                                      | Build     |                                                           |
+| **12** | Thu | Apr 16        | c23w12 | TBD                                                      | Build     |                                                           |
+| **13** | Tue | Apr 21        | c24w13 | TBD                                                      | Build     |                                                           |
+| **13** | Thu | Apr 23        | c25w13 | **Feature freeze.** Final measurement + pitch data collection. | Measure |                                                           |
+| **14** | Tue | Apr 28        | c26w14 | Pitch building + presentations                           | Ship      |                                                           |
+| **14** | Thu | Apr 30        | c27w14 | Pitch workshop                                           | Ship      |                                                           |
+| **Finals** | Tue | May 12   | c28    | **DEMO DAY**                                             | Ship      |                                                           |
 
 ---
 
@@ -171,11 +171,10 @@ These books provide deeper background on course topics. Recommended but not requ
 ## Calendar Notes
 
 - **Spring Break**: March 16-20, 2026 (no classes)
-- **Academic Holiday**: Thursday, March 26, 2026 (no class — Columbia academic holiday)
 - **Last day of classes**: Monday, May 4, 2026 (per Columbia registrar)
 - **Finals period**: May 8-15, 2026
 - **Demo Day**: May 12, 2026 (Tuesday, finals period)
-- **Single-class weeks**: Week 1 (first week), Week 9 (post-spring break + holiday)
+- **Single-class weeks**: Week 1 (first week)
 
 ---
 
@@ -230,21 +229,22 @@ Teams run structured experiments throughout the course:
 ### SPRING BREAK (Mar 16-20)
 
 ### Weeks 9-10: Iterate
-- **c16w9** (Mar 24): Post-break check-in. Plan experiment 3 (single class due to holiday)
-- **c17w10** (Mar 31): Experiment 3 + social media / organic growth strategy
-- **c18w10** (Apr 2): Analyze experiment 3 results, iterate
+- **c16w9** (Mar 24): Post-break check-in. Peer review + semester planning.
+- **c17w9** (Mar 26): TBD
+- **c18w10** (Mar 31): TBD
+- **c19w10** (Apr 2): TBD
 
 ### Weeks 11-12: Scale + Optimize
-- **c19w11** (Apr 7): Analytics workshop — AARRR / pirate metrics + Google Analytics / Amplitude setup
-- **c20w11** (Apr 9): Experiment 4 + pricing experimentation
-- **c21w12** (Apr 14): Onboarding optimization workshop + user testing on real flows
-- **c22w12** (Apr 16): Iterate on product based on testing results
+- **c20w11** (Apr 7): TBD
+- **c21w11** (Apr 9): TBD
+- **c22w12** (Apr 14): TBD
+- **c23w12** (Apr 16): TBD
 
 ### Week 13: Final Build + Freeze
-- **c23w13** (Apr 21): Y Combinator applications workshop + final build
-- **c24w13** (Apr 23): **Feature freeze.** Final measurement round — product frozen, collect usage data, quotes, metrics for pitch
+- **c24w13** (Apr 21): TBD
+- **c25w13** (Apr 23): **Feature freeze.** Final measurement round — product frozen, collect usage data, quotes, metrics for pitch
 
 ### Week 14 + Finals: Ship
-- **c25w14** (Apr 28): Build pitch narrative + presentations from experiment results
-- **c26w14** (Apr 30): Pitch workshop + dress rehearsal
-- **c27** (May 12): **DEMO DAY** (Finals period)
+- **c26w14** (Apr 28): Pitch building + presentations
+- **c27w14** (Apr 30): Pitch workshop
+- **c28** (May 12): **DEMO DAY** (Finals period)
