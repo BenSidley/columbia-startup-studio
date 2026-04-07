@@ -109,7 +109,7 @@ The course follows the canonical validation sequence: **Problem → Solution →
 | **10** | Tue | Mar 31        | c18w10 | AARRR intro. User testing methodology. GA4+Amplitude setup. Leaderboard starts. | Iterate   | 🎧 SEO + Content Marketing + AI Optimization              |
 | **10** | Thu | Apr 2         | c19w10 | Automated leaderboard (API endpoint). Growth strategy feedback. AI for your product (5 patterns + HITL). | Iterate   | 🎧 Lifecycle Marketing + Email                            |
 | **11** | Tue | Apr 7         | c20w11 | Analytics deep dive: AARRR + GA/Amplitude setup.         | Iterate   | 🎧 Metrics: AARRR + Leading vs Lagging                    |
-| **11** | Thu | Apr 9         | c21w11 | Pricing experimentation workshop.                        | Iterate   | 🎧 Unit Economics + Pricing                               |
+| **11** | Thu | Apr 9         | c21w11 | Cold start problems + network effects.                   | Iterate   | 🎧 Unit Economics + Pricing                               |
 | **12** | Tue | Apr 14        | c22w12 | Onboarding optimization workshop + user testing.         | Iterate   | 🎧 Fundraising + Company Formation                        |
 | **12** | Thu | Apr 16        | c23w12 | Iterate on product based on testing.                     | Iterate   |                                                           |
 | **13** | Tue | Apr 21        | c24w13 | Y Combinator applications.                               | Iterate   | 🎧 YC Applications                                        |
@@ -235,7 +235,7 @@ Teams run structured experiments throughout the course:
 
 ### Weeks 11-12: Scale + Optimize
 - **c20w11** (Apr 7): Analytics deep dive: AARRR pirate metrics + GA/Amplitude setup.
-- **c21w11** (Apr 9): Pricing experimentation workshop.
+- **c21w11** (Apr 9): Cold start problems and network effects. How to launch products that need other people to be valuable.
 - **c22w12** (Apr 14): Onboarding optimization workshop + user testing on real flows.
 - **c23w12** (Apr 16): Iterate on product based on testing results.
 
