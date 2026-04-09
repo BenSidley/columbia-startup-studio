@@ -86,37 +86,37 @@ The course follows the canonical validation sequence: **Problem → Solution →
 
 ## Weekly Schedule Overview
 
-| Week   | Day | Date          | Class  | Activities                                               | Phase     | Reading/Podcast/Resource                                  |
-| ------ | --- | ------------- | ------ | -------------------------------------------------------- | --------- | --------------------------------------------------------- |
-| **1**  | Thu | Jan 22        | c1w1   | Course intro, speed dating, problems brainstorm          | Explore   | *5 Dysfunctions* (1-3)                                    |
-| **2**  | Tue | Jan 27        | c2w2   | Instructor intros, speed dating, personas brainstorm     | Explore   | *5 Dysfunctions* (4-5)                                    |
-| **2**  | Thu | Jan 29        | c3w2   | HW review, Fermi estimation for audience sizing          | Explore   | -                                                         |
-| **3**  | Tue | Feb 3         | c4w3   | Team formation                                           | Form      | -                                                         |
-| **3**  | Thu | Feb 5         | c5w3   | Divergent thinking, idea generation                      | Form      | -                                                         |
-| **4**  | Tue | Feb 10        | c6w4   | Problem + solution interviews                            | Validate  | *The Mom Test* excerpts                                   |
-| **4**  | Thu | Feb 12        | c7w4   | Define target audience from interview learnings          | Validate  | -                                                         |
-| **5**  | Tue | Feb 17        | c8w5   | Interview synthesis + downselect                         | Solution  | -                                                         |
-| **5**  | Thu | Feb 19        | c9w5   | Brand position + synthetic user testing intro            | Solution  | -                                                         |
-| **6**  | Tue | Feb 24        | c10w6  | Synthetic test results due. Mike Fynn: paid demand gen. Style guide + AI tools overview. | Solution  | 🎧 LLM Tools Landscape · 🎧 Synthesis + Synthetic Testing |
-| **6**  | Thu | Feb 26        | c11w6  | Landing pages due + live. Demand gen strategies lecture.  | Demand    | *Hacking Growth* excerpts · [Google Analytics Cert](https://skillshop.google.com) |
-| **7**  | Tue | Mar 3         | c12w7  | Start building real product. Dev workflow intro.         | Build     | *Lean Startup* MVP chapter · 🎧 Dev Workflow + Git        |
-| **7**  | Thu | Mar 5         | c13w7  | Build sprint. Design experiment 2.                       | Build     | 🎧 Demand Gen: Paid vs Earned vs Organic                  |
-| **8**  | Tue | Mar 10        | c14w8  | Build sprint. Review experiment 2 results.               | Build     | 🎧 Cold Start + First 1000 Users + PR                     |
-| **8**  | Thu | Mar 12        | c15w8  | **MVP Presentations** + peer feedback                    | Build     | -                                                         |
-|        |     | **Mar 16-20** |        | **SPRING BREAK - NO CLASSES**                            |           |                                                           |
-| **9**  | Tue | Mar 24        | c16w9  | Post-break check-in. Peer review + semester planning.    | Iterate   |                                                           |
-| **9**  | Thu | Mar 26        | c17w9  | Feature prioritization (RICE). Roadmap reviews.          | Iterate   | 🎧 RAG + MCP + When to Add AI                             |
-| **10** | Tue | Mar 31        | c18w10 | AARRR intro. User testing methodology. GA4+Amplitude setup. Leaderboard starts. | Iterate   | 🎧 SEO + Content Marketing + AI Optimization              |
-| **10** | Thu | Apr 2         | c19w10 | Automated leaderboard (API endpoint). Growth strategy feedback. AI for your product (5 patterns + HITL). | Iterate   | 🎧 Lifecycle Marketing + Email                            |
-| **11** | Tue | Apr 7         | c20w11 | Analytics deep dive: AARRR + GA/Amplitude setup.         | Iterate   | 🎧 Metrics: AARRR + Leading vs Lagging                    |
-| **11** | Thu | Apr 9         | c21w11 | Cold start problems + network effects.                   | Iterate   | 🎧 Unit Economics + Pricing                               |
-| **12** | Tue | Apr 14        | c22w12 | Onboarding optimization workshop + user testing.         | Iterate   | 🎧 Fundraising + Company Formation                        |
-| **12** | Thu | Apr 16        | c23w12 | Iterate on product based on testing.                     | Iterate   |                                                           |
-| **13** | Tue | Apr 21        | c24w13 | Y Combinator applications.                               | Iterate   | 🎧 YC Applications                                        |
-| **13** | Thu | Apr 23        | c25w13 | **Feature freeze.** Final measurement + pitch data collection. | Measure |                                                           |
-| **14** | Tue | Apr 28        | c26w14 | Pitch building + presentations                           | Ship      |                                                           |
-| **14** | Thu | Apr 30        | c27w14 | Pitch workshop                                           | Ship      |                                                           |
-| **Finals** | Tue | May 12   | c28    | **DEMO DAY**                                             | Ship      |                                                           |
+| Week       | Day | Date          | Class  | Activities                                                                                               | Phase    | Reading/Podcast/Resource                                                          |
+| ---------- | --- | ------------- | ------ | -------------------------------------------------------------------------------------------------------- | -------- | --------------------------------------------------------------------------------- |
+| **1**      | Thu | Jan 22        | c1w1   | Course intro, speed dating, problems brainstorm                                                          | Explore  | *5 Dysfunctions* (1-3)                                                            |
+| **2**      | Tue | Jan 27        | c2w2   | Instructor intros, speed dating, personas brainstorm                                                     | Explore  | *5 Dysfunctions* (4-5)                                                            |
+| **2**      | Thu | Jan 29        | c3w2   | HW review, Fermi estimation for audience sizing                                                          | Explore  | -                                                                                 |
+| **3**      | Tue | Feb 3         | c4w3   | Team formation                                                                                           | Form     | -                                                                                 |
+| **3**      | Thu | Feb 5         | c5w3   | Divergent thinking, idea generation                                                                      | Form     | -                                                                                 |
+| **4**      | Tue | Feb 10        | c6w4   | Problem + solution interviews                                                                            | Validate | *The Mom Test* excerpts                                                           |
+| **4**      | Thu | Feb 12        | c7w4   | Define target audience from interview learnings                                                          | Validate | -                                                                                 |
+| **5**      | Tue | Feb 17        | c8w5   | Interview synthesis + downselect                                                                         | Solution | -                                                                                 |
+| **5**      | Thu | Feb 19        | c9w5   | Brand position + synthetic user testing intro                                                            | Solution | -                                                                                 |
+| **6**      | Tue | Feb 24        | c10w6  | Synthetic test results due. Mike Fynn: paid demand gen. Style guide + AI tools overview.                 | Solution | 🎧 LLM Tools Landscape · 🎧 Synthesis + Synthetic Testing                         |
+| **6**      | Thu | Feb 26        | c11w6  | Landing pages due + live. Demand gen strategies lecture.                                                 | Demand   | *Hacking Growth* excerpts · [Google Analytics Cert](https://skillshop.google.com) |
+| **7**      | Tue | Mar 3         | c12w7  | Start building real product. Dev workflow intro.                                                         | Build    | *Lean Startup* MVP chapter · 🎧 Dev Workflow + Git                                |
+| **7**      | Thu | Mar 5         | c13w7  | Build sprint. Design experiment 2.                                                                       | Build    | 🎧 Demand Gen: Paid vs Earned vs Organic                                          |
+| **8**      | Tue | Mar 10        | c14w8  | Build sprint. Review experiment 2 results.                                                               | Build    | 🎧 Cold Start + First 1000 Users + PR                                             |
+| **8**      | Thu | Mar 12        | c15w8  | **MVP Presentations** + peer feedback                                                                    | Build    | -                                                                                 |
+|            |     | **Mar 16-20** |        | **SPRING BREAK - NO CLASSES**                                                                            |          |                                                                                   |
+| **9**      | Tue | Mar 24        | c16w9  | Post-break check-in. Peer review + semester planning.                                                    | Iterate  |                                                                                   |
+| **9**      | Thu | Mar 26        | c17w9  | Feature prioritization (RICE). Roadmap reviews.                                                          | Iterate  | 🎧 RAG + MCP + When to Add AI                                                     |
+| **10**     | Tue | Mar 31        | c18w10 | AARRR intro. User testing methodology. GA4+Amplitude setup. Leaderboard starts.                          | Iterate  | 🎧 SEO + Content Marketing + AI Optimization                                      |
+| **10**     | Thu | Apr 2         | c19w10 | Automated leaderboard (API endpoint). Growth strategy feedback. AI for your product (5 patterns + HITL). | Iterate  | 🎧 Lifecycle Marketing + Email                                                    |
+| **11**     | Tue | Apr 7         | c20w11 | Analytics deep dive: AARRR + GA/Amplitude setup.                                                         | Iterate  | 🎧 Metrics: AARRR + Leading vs Lagging                                            |
+| **11**     | Thu | Apr 9         | c21w11 | Cold start problems + network effects.                                                                   | Iterate  | 🎧 Unit Economics + Pricing                                                       |
+| **12**     | Tue | Apr 14        | c22w12 | Onboarding optimization workshop + user testing.                                                         | Iterate  | 🎧 Fundraising + Company Formation                                                |
+| **12**     | Thu | Apr 16        | c23w12 | Iterate on product based on testing.                                                                     | Iterate  |                                                                                   |
+| **13**     | Tue | Apr 21        | c24w13 | Y Combinator applications.                                                                               | Iterate  | 🎧 YC Applications                                                                |
+| **13**     | Thu | Apr 23        | c25w13 | **Feature freeze.** Final measurement + pitch data collection.                                           | Measure  |                                                                                   |
+| **14**     | Tue | Apr 28        | c26w14 | Pitch building + presentations                                                                           | Ship     |                                                                                   |
+| **14**     | Thu | Apr 30        | c27w14 | Pitch workshop                                                                                           | Ship     |                                                                                   |
+| **Finals** | Tue | May 12        | c28    | **DEMO DAY**                                                                                             | Ship     |                                                                                   |
 
 ---
 
