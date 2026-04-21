@@ -17,17 +17,28 @@ This is your first draft — not a polished final version. The goal is to get so
 
 ## What to Submit
 
-Push to your team folder in the class repo:
+Push both files to your team folder in the class repo:
 
 ```
-teams/your-team-name/pitch_draft1.pdf
+teams/your-team-name/pitch_draft1_live.pdf
+teams/your-team-name/pitch_draft1_leavebehind.pdf
 ```
 
 ---
 
-## What Your Deck Must Include
+## Two Decks, Two Jobs
 
-10–12 slides covering:
+You are submitting **two separate decks** — not two versions of the same file.
+
+**Live pitch deck (10–12 slides)**
+The deck you present from on Demo Day. Near-zero text per slide — readable in 3 seconds. Reinforces your voice; does not compete with it.
+
+**Leave-behind deck (15–20 slides)**
+The deck you send after the pitch. Full sentences, headlines that state conclusions. Stands alone without you in the room. Partners who weren't present should be able to evaluate the business from this deck alone.
+
+---
+
+## What Both Decks Must Cover
 
 1. Cover / Title
 2. Problem
@@ -41,7 +52,7 @@ teams/your-team-name/pitch_draft1.pdf
 10. Team (move it earlier if it's load-bearing)
 11. The Ask
 
-This is the live pitch deck. The leave-behind version can come later.
+The leave-behind can go deeper on each section — add supporting data, appendix slides, and context that would slow down a live pitch but matters to a reader.
 
 ---
 
