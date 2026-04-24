@@ -18,18 +18,18 @@ You can browse the full semester arc in the [class schedule](classes/class_sched
 
 | Product | Team | What it does |
 |---------|------|--------------|
-| [Circles](teams/the-birds/) | The Birds | Real-world social coordination built for the density of Columbia and Barnard |
-| [Evidence of Life](teams/august-fan-club/) | August Fan Club | Private timeline that shows what actually happened, not just what was planned |
-| [FreeWeight](teams/team-frontend/) | team-frontend | Strength training platform connecting coaches and athletes |
-| [HAUNT](teams/standard_deviants/) | Standard Deviants | NYC event discovery and group coordination — see what friends are doing, decide together |
-| [Misfit.AI](teams/misfitAI/) | Misfit.AI | AI-powered personal wardrobe assistant |
-| [QuestCity](teams/millionaires/) | Millionaires | Gamified outdoor exploration for curious people |
-| [Recruitr](teams/dream-team/) | Dream Team | Sports recruiting that feels like social media |
-| [Rekindled](teams/llmao/) | LLMao | A social app for people in transition who need to build a new social circle |
-| [Roam](teams/roam/) | Roam | Turn saved ideas into actual plans |
-| [Sift](teams/j-combinator/) | J-Combinator | Answer 3 questions, get a short list of things actually worth doing in NYC this weekend |
-| [Tripable](teams/4CUz/) | 4CUz | Group trip planning: votes, itinerary, and costs in one place |
-| [Vouch](teams/basket-architects/) | Basket Architects | Social ratings for NYC experiences — your social life, ranked |
+| [Circles](https://circlesmain.vercel.app) | The Birds | Real-world social coordination built for the density of Columbia and Barnard |
+| [Evidence of Life](https://evidenceoflife.vercel.app) | August Fan Club | Private timeline that shows what actually happened, not just what was planned |
+| [FreeWeight](https://freeweight-prod.onrender.com) | team-frontend | Strength training platform connecting coaches and athletes |
+| [HAUNT](https://landing-page-ssa5.onrender.com) | Standard Deviants | NYC event discovery and group coordination — see what friends are doing, decide together |
+| [Misfit.AI](https://misfitai-2026.web.app) | Misfit.AI | AI-powered personal wardrobe assistant |
+| [QuestCity](https://questcity-millionaires.netlify.app) | Millionaires | Gamified outdoor exploration for curious people |
+| [Recruitr](https://recruitr.app) | Dream Team | Sports recruiting that feels like social media |
+| [Rekindled](https://rekindledapp.netlify.app) | LLMao | A social app for people in transition who need to build a new social circle |
+| [Roam](https://roam-web.pages.dev) | Roam | Turn saved ideas into actual plans |
+| [Sift](https://siftapp.site) | J-Combinator | Answer 3 questions, get a short list of things actually worth doing in NYC this weekend |
+| [Tripable](https://tripable.pro) | 4CUz | Group trip planning: votes, itinerary, and costs in one place |
+| [Vouch](https://vouch-web-6434.onrender.com) | Basket Architects | Social ratings for NYC experiences — your social life, ranked |
 
 ---
 
