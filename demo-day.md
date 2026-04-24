@@ -1,40 +1,58 @@
-# Demo Day
-
-**Startup Studio: AI-Accelerated Building & Validation**
-Columbia University, Department of Computer Science
+# Columbia Startup Studio: Demo Day
 
 **Tuesday, May 12, 2026**
-**1:10 PM - 4:00 PM**
-**451 Computer Science Building, Columbia University**
+1:10 – 4:00 PM
+451 Computer Science Building, Columbia University
 
 ---
 
-## What is Demo Day?
+Twelve Columbia CS teams. One semester. Live products, real users.
 
-Twelve student teams will present the startups they've built over the course of the Spring 2026 semester. Each team started with a problem, interviewed real users, validated demand, and built a working product using AI-accelerated development tools.
+This spring, graduate students in [Startup Studio: AI-Accelerated Building & Validation](resources/course_syllabus.md) built startups from scratch — not mockups, not hypotheticals. Starting from user interviews, they validated demand, built working products using AI-accelerated tools, acquired real users, and iterated on real data. On May 12, they present what they built and what they learned.
 
-These aren't mockups or slide decks about hypothetical products. Every team has a live product with real users.
+You can browse the full semester arc in the [class schedule](classes/class_schedule.md) and each team's work in the [teams folder](teams/).
 
-## What to Expect
-
-Teams will give short presentations covering:
-
-- The problem they're solving and who they're solving it for
-- How they validated demand (user interviews, landing pages, ad campaigns)
-- A live product demo
-- Growth metrics and key results from the semester
-- What's next
+---
 
 ## The Teams
 
-Teams span a range of consumer and B2B products, including social discovery, recruitment marketplaces, event curation, wellness platforms, and AI-powered productivity tools. All products were built and launched during the semester.
+| Product | Team | What it does |
+|---------|------|--------------|
+| [Circles](teams/the-birds/) | The Birds | Real-world social coordination built for the density of Columbia and Barnard |
+| [Evidence of Life](teams/august-fan-club/) | August Fan Club | Private timeline that shows what actually happened, not just what was planned |
+| [FreeWeight](teams/team-frontend/) | team-frontend | Strength training platform connecting coaches and athletes |
+| [HAUNT](teams/standard_deviants/) | Standard Deviants | NYC event discovery and group coordination — see what friends are doing, decide together |
+| [Misfit.AI](teams/misfitAI/) | Misfit.AI | AI-powered personal wardrobe assistant |
+| [QuestCity](teams/millionaires/) | Millionaires | Gamified outdoor exploration for curious people |
+| [Recruitr](teams/dream-team/) | Dream Team | Sports recruiting that feels like social media |
+| [Rekindled](teams/llmao/) | LLMao | A social app for people in transition who need to build a new social circle |
+| [Roam](teams/roam/) | Roam | Turn saved ideas into actual plans |
+| [Sift](teams/j-combinator/) | J-Combinator | Answer 3 questions, get a short list of things actually worth doing in NYC this weekend |
+| [Tripable](teams/4CUz/) | 4CUz | Group trip planning: votes, itinerary, and costs in one place |
+| [Vouch](teams/basket-architects/) | Basket Architects | Social ratings for NYC experiences — your social life, ranked |
+
+---
+
+## What to Expect
+
+Each team presents in a short slot:
+
+- The problem they set out to solve, and who has it
+- How they validated demand before building
+- A live product demo
+- Growth metrics from the semester
+- What comes next
+
+---
 
 ## About the Course
 
-COMS4995-011 is a hands-on computer science course where student teams experience the full cycle of technology entrepreneurship: problem discovery, user research, AI-assisted product development, and growth experimentation. Students build real products, acquire real users, and learn to make decisions from real data.
+[COMS4995-011](resources/course_syllabus.md) is a hands-on CS course covering the full arc of technology entrepreneurship: problem discovery, user research, AI-assisted product development, and growth experimentation. Students build real products, acquire real users, and make decisions from real data.
 
 **Instructor:** Ken St. Clair, Adjunct Assistant Professor of Computer Science
 
+---
+
 ## Attending
 
-Demo Day is open to invited guests. If you'd like to attend, please reach out to Ken St. Clair at krs2212@columbia.edu.
+Demo Day is open to invited guests. Reach out to Ken at krs2212@columbia.edu.
