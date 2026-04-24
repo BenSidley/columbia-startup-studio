@@ -24,7 +24,7 @@ You can browse the full semester arc in the [class schedule](classes/class_sched
 | [HAUNT](https://landing-page-ssa5.onrender.com) | Standard Deviants | NYC event discovery and group coordination — see what friends are doing, decide together |
 | [Misfit.AI](https://misfitai-2026.web.app) | Misfit.AI | AI-powered personal wardrobe assistant |
 | [QuestCity](https://questcity-millionaires.netlify.app) | Millionaires | Gamified outdoor exploration for curious people |
-| [Recruitr](https://recruitr.app) | Dream Team | Sports recruiting that feels like social media |
+| Recruitr | Dream Team | Sports recruiting that feels like social media |
 | [Rekindled](https://rekindledapp.netlify.app) | LLMao | A social app for people in transition who need to build a new social circle |
 | [Roam](https://roam-web.pages.dev) | Roam | Turn saved ideas into actual plans |
 | [Sift](https://siftapp.site) | J-Combinator | Answer 3 questions, get a short list of things actually worth doing in NYC this weekend |
