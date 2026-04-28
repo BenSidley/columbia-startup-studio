@@ -33,7 +33,7 @@ On May 12, they will present VC-style pitches with live demos.
 
 ## About the Course
 
-[COMS4995-011](resources/course_syllabus.md) is a hands-on CS course covering the full arc of technology entrepreneurship: problem discovery, user research, AI-assisted product development, and growth experimentation. Students build real products, acquire real users, and make decisions from real data.
+[COMS4995-011](resources/course_syllabus.md) was designed as a blend of three disciplines: UX research and interviewing techniques, lean startup validation and growth methods, and AI used both as a tool for building products and as a way to understand the world. Most startup courses pick one of these. This one teaches the synthesis.
 
 **Instructor:** Ken St. Clair, Adjunct Assistant Professor of Computer Science
 
