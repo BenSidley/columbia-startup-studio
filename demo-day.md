@@ -19,7 +19,7 @@ On May 12, they will present VC-style pitches with live demos.
 | Circles          | Novel social coordination built for Columbia Students                                    |
 | Evidence of Life | Private timeline that shows what actually happened, not just what was planned            |
 | FreeWeight       | Connecting college coaches and athletes for improved athletic training                   |
-| HAUNT            | NYC event discovery and group coordination — see what friends are doing, decide together |
+| HAUNT            | NYC event discovery and group coordination: see what friends are doing, decide together  |
 | Misfit.AI        | AI analyzes your wardrobe, calendar, and weather for wardrobe recommendations            |
 | QuestCity        | Gamified outdoor exploration for friends and strangers                                   |
 | Recruitr         | Sports recruiting that feels like social media                                           |
@@ -43,4 +43,4 @@ On May 12, they will present VC-style pitches with live demos.
 
 We have several confirmed attendees from large companies and startups, and a few slots remaining for additional industry guests. Reach out to Ken at krs2212@columbia.edu to request an invitation.
 
-Columbia has a closed campus — attendance is by invitation only.
+Columbia has a closed campus. Attendance is by invitation only.
