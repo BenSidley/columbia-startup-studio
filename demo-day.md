@@ -1,47 +1,33 @@
 # Columbia Startup Studio: Demo Day
 
 **Tuesday, May 12, 2026**
-1:10 – 4:00 PM
+1:00 – 4:00 PM
 451 Computer Science Building, Columbia University
 
 ---
 
-Twelve Columbia CS teams. One semester. Live products, real users.
+This spring, students in Columbia University's [Startup Studio: AI-Accelerated Building & Validation](resources/course_syllabus.md) built real startups from scratch. Starting with interviewing users for problem validation, they built working code using AI, acquired real users, and iterated based on what those users actually said and did.
 
-This spring, graduate students in [Startup Studio: AI-Accelerated Building & Validation](resources/course_syllabus.md) built startups from scratch — not mockups, not hypotheticals. Starting from user interviews, they validated demand, built working products using AI-accelerated tools, acquired real users, and iterated on real data. On May 12, they present what they built and what they learned.
-
-You can browse the full semester arc in the [class schedule](classes/class_schedule.md).
+On May 12, they will present VC-style pitches with live demos. 
 
 ---
 
 ## The Teams
 
-| Product | What it does |
-|---------|--------------|
-| Circles | Real-world social coordination built for the density of Columbia and Barnard |
-| Evidence of Life | Private timeline that shows what actually happened, not just what was planned |
-| FreeWeight | Strength training platform connecting coaches and athletes |
-| HAUNT | NYC event discovery and group coordination — see what friends are doing, decide together |
-| Misfit.AI | AI-powered personal wardrobe assistant |
-| QuestCity | Gamified outdoor exploration for curious people |
-| Recruitr | Sports recruiting that feels like social media |
-| Rekindled | A social app for people in transition who need to build a new social circle |
-| Roam | Turn saved ideas into actual plans |
-| Sift | Answer 3 questions, get a short list of things actually worth doing in NYC this weekend |
-| Tripable | Group trip planning: votes, itinerary, and costs in one place |
-| Vouch | Social ratings for NYC experiences — your social life, ranked |
-
----
-
-## What to Expect
-
-Each team presents in a short slot:
-
-- The problem they set out to solve, and who has it
-- How they validated demand before building
-- A live product demo
-- Growth metrics from the semester
-- What comes next
+| Product          | What it does                                                                             |
+| ---------------- | ---------------------------------------------------------------------------------------- |
+| Circles          | Novel social coordination built for Columbia Students                                    |
+| Evidence of Life | Private timeline that shows what actually happened, not just what was planned            |
+| FreeWeight       | Connecting college coaches and athletes for improved athletic training                   |
+| HAUNT            | NYC event discovery and group coordination — see what friends are doing, decide together |
+| Misfit.AI        | AI analyzes your wardrobe, calendar, and weather for wardrobe recommendations            |
+| QuestCity        | Gamified outdoor exploration for friends and strangers                                   |
+| Recruitr         | Sports recruiting that feels like social media                                           |
+| Rekindled        | A social app for people in transition who need to build a new social circle              |
+| Roam             | Turn TikTok reels into plans with friends                                                |
+| Sift             | Event recommendation that's not overwhelming                                             |
+| Tripable         | Group trip planning: votes, itinerary, and costs in one place                            |
+| Vouch            | Ratings where your friends are the algorithm                                             |
 
 ---
 
@@ -55,4 +41,6 @@ Each team presents in a short slot:
 
 ## Attending
 
-Demo Day is open to invited guests. Reach out to Ken at krs2212@columbia.edu.
+In attendance will be industry reps from large companies and startups. Reach out to Ken at krs2212@columbia.edu to attend.
+
+Columbia has a closed campus. You must have an invitation to attend. 
